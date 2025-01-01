@@ -22,3 +22,20 @@ DOCTYPE html>
     </footer>
 </body>
 </html>
+Kekurangan:
+Penggunaan elemen <div> tidak semantik: Elemen <div> digunakan untuk membungkus paragraf, tetapi tidak ada fungsi khusus dari elemen ini di sini.
+
+Kurangnya elemen <main>: Struktur semantik halaman tidak jelas karena tidak ada elemen <main> untuk menandai konten utama.
+
+Tidak adanya elemen <header> atau struktur tambahan untuk informasi utama: Halaman hanya memiliki <h1> tanpa konteks dalam struktur header yang lebih baik.
+
+Minimnya atribut aksesibilitas: Tidak ada atribut ARIA atau pengidentifikasi yang membantu pembaca layar mengenali elemen dengan jelas.
+
+Perbaikan:
+Gantikan <div> dengan elemen semantik: Gunakan elemen <section> atau <article> untuk membungkus konten dengan makna yang lebih jelas.
+
+Tambahkan elemen <main>: Bungkus konten utama di dalam elemen <main> untuk meningkatkan struktur semantik.
+
+Tambahkan elemen <header>: Gunakan elemen <header> untuk membungkus <h1> dan mungkin menambahkan elemen navigasi jika diperlukan.
+
+Tambahkan atribut aksesibilitas: Gunakan atribut seperti aria-label untuk memberi penjelasan tambahan pada elemen, jika diperlukan.
