@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman dengan Dua Kolom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="kolom-pertama">
+            <h1>Selamat datang!</h1>
+            <p>Ini adalah kolom pertama yang berisi teks. Kolom ini memiliki lebar tetap 60% dari lebar layar.</p>
+        </div>
+        <div class="kolom-kedua">
+            <img src="rifan/400" alt="Contoh Gambar>
+        </div>
+    </div>
+
+</body>
+</html>
+
+/* Mengatur gaya dasar untuk body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container yang akan menampung kedua kolom */
+.container {
+    display: flex; /* Menjadikan container menggunakan flexbox */
+    width: 100%;
+}
+
+/* Kolom pertama - lebar 60% */
+.kolom-pertama {
+    width: 60%; /* Lebar tetap 60% */
+    padding: 20px;
+}
+
+/* Kolom kedua - lebar 40% */
+.kolom-kedua {
+    width: 40%; /* Lebar tetap 40% */
+    padding: 20px;
+}
+
+.kolom-kedua img {
+    width: 100%;  /* Agar gambar mengisi lebar kolom */
+    height: auto; /* Menjaga rasio aspek gambar */
+}
+
+
+//Kolom pertama akan mengambil 60% dari lebar container dan menampilkan teks.
+//Kolom kedua akan mengambil sisa 40% dan menampilkan gambar yang akan di-resize agar pas dengan lebar kolomnya.
