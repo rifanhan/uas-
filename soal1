@@ -1,0 +1,24 @@
+DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Saya</title>
+</head>
+<body>
+    <header>
+        <h1>Selamat datang!</h1>
+    </header>
+    <main>
+        <section>
+            <p>Ini adalah website pertama saya.</p>
+        </section>
+        <section>
+            <p>Konten lebih lanjut di sini.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Hak Cipta 2024</p>
+    </footer>
+</body>
+</html>
