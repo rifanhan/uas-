@@ -1,0 +1,7 @@
+// tombol dan navigasi
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+// event listener untuk tombol menu
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
