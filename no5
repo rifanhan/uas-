@@ -1,0 +1,15 @@
+function cariAngkaTerbesar(arr) {
+    let terbesar = arr[0]; // Anggap elemen pertama adalah yang terbesar
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > terbesar) {
+            terbesar = arr[i]; // Jika ada angka yang lebih besar, update terbesar
+        }
+    }
+
+    return terbesar;
+}
+
+// Contoh penggunaan
+const angka = [5, 10, 15, 20, 25];
+console.log(cariAngkaTerbesar(angka)); // Output: 25
