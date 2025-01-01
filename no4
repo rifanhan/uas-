@@ -1,0 +1,25 @@
+// Mendapatkan elemen form, input email, dan elemen untuk pesan kesalahan
+const form = document.getElementById('registrationForm');
+const emailInput = document.getElementById('email');
+const errorMessage = document.getElementById('error-message');
+
+// Fungsi untuk memvalidasi format email
+function validateEmail(email) {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    return emailPattern.test(email);
+}
+
+// Menangani event submit form
+form.addEventListener('submit', function(event) {
+    // Menghapus pesan kesalahan sebelumnya
+    errorMessage.textContent = '';
+
+    // Memeriksa apakah email valid
+    if (!validateEmail(emailInput.value)) {
+        // Mencegah form untuk dikirim jika email tidak valid
+        event.preventDefault();
+        
+        // Menampilkan pesan kesalahan
+        errorMessage.textContent = 'Email tidak valid. Silakan masukkan alamat email yang benar.';
+    }
+});
